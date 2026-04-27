@@ -7,13 +7,15 @@ const selectionInput = prompt(`What is 7 + 5 ? Please select one of the followin
 [1] 89 
 [2] 12
 `); 
+ console.log(selectionInput)
+ console.log(typeof selectionInput)
 
 if(Number.isNaN(selectionInput)) {
     alert("you must enter a number. "); 
 } else if(selectionInput > 3 || selectionInput < 1) {
 
     alert("enter 1, 2 or 3"); 
-}else if (selectionInput === 2 ) {
+}else if (selectionInput == 2 ) {
     score += 1; 
 }else {
     console.log("Sorry, fam that's the wrong answer"); 
@@ -29,7 +31,7 @@ if(Number.isNaN(selectionInput2)) {
 } else if(selectionInput2 > 3 || selectionInput2 < 1) {
 
     alert("enter 1, 2 or 3"); 
-}else if (selectionInput2 === 1 ) {
+}else if (selectionInput2 == 1 ) {
     score += 1; 
 }else {
     console.log("Sorry, fam that's the wrong answer"); 
@@ -45,10 +47,11 @@ if(Number.isNaN(selectionInput3)) {
 } else if(selectionInput3 > 3 || selectionInput3 < 1) {
 
     alert("enter 1, 2 or 3"); 
-}else if (selectionInput3 === 1 ) {
+}else if (selectionInput3 == 1 ) {
     score += 1; 
 }else {
     console.log("Sorry, fam that's the wrong answer"); 
 }
 
-console.log(`Your final score is: ${score}`) 
+// console.log() 
+alert(`Your final score is: ${score}`)
